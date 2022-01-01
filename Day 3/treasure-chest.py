@@ -26,13 +26,13 @@ print("Your mission is to find the treasure.")
 #https://www.draw.io/?lightbox=1&highlight=0000ff&edit=_blank&layers=1&nav=1&title=Treasure%20Island%20Conditional.drawio#Uhttps%3A%2F%2Fdrive.google.com%2Fuc%3Fid%3D1oDe4ehjWZipYRsVfeAx2HyB7LCQ8_Fvi%26export%3Ddownload
 
 #Write your code below this line 👇
-choice1 = input("You\'re at a crossroad. Where do you want to go? Type 'left' or 'right'.\n")
+choice1 = input("You\'re at a crossroad. Where do you want to go? Type 'left' or 'right'.\n").lower()
 
 if choice1 == "right":
   print("You buck your toe.\n---GAME OVER---")
 
 elif choice1 == "left":
-  choice2 = input("You\'ve come to a lake. There is an island in the middle of the lake. Type 'wait' to wait for a boat. Type 'swim' to swim across.\n")
+  choice2 = input("You\'ve come to a lake. There is an island in the middle of the lake. Type 'wait' to wait for a boat. Type 'swim' to swim across.\n").lower()
 
   if choice2 == "swim":
     print("You fall in love with a siren you met on the way, and decide to settle down to start a family.\n---GAME OVER---")
@@ -41,7 +41,7 @@ elif choice1 == "left":
     choice3 = input('''The boat suddenly appears out of the mist. 
 You arrive at the island unharmed. 
 There is a house with 3 doors. One red, one yellow and one blue. 
-Which colour do you choose?\n''')
+Which colour do you choose?\n''').lower()
 
     if choice3 == "red":
       print("Who chooses a red door? You're pulled into a pit of fire.\n---GAME OVER---")
