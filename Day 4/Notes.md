@@ -43,6 +43,7 @@ print(fruits[-1])
 
 #You can change the items in the list
 fruits[1] = "orange"
->fruits = ["lemon", "orange", "pear"]
+print(fruits)
+>["lemon", "orange", "pear"]
 
 ```
