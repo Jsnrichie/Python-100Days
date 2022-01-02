@@ -25,3 +25,20 @@ print(my_module.pi)
 ```
 
 # Lists
+
+- A data structure used to store many pieces of related data.
+- Also has an order.
+
+
+```python
+fruits = [item1, item2]
+fruits = ["lemon", "apple", "pear"]
+
+print(fruits[0])
+> lemon
+
+#Can have negative indices (starts at end of list)
+print(fruits[-1])
+> pear
+
+```
