@@ -46,4 +46,11 @@ fruits[1] = "orange"
 print(fruits)
 >["lemon", "orange", "pear"]
 
+# You can add items to the list 
+fruits.append("apple")
+print(fruits)
+>["lemon", "orange", "pear", "apple"]
+
 ```
+
+**You can find out more about what lists can do at https://docs.python.org/3/tutorial/datastructures.html.**
