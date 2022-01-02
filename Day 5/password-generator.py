@@ -36,4 +36,4 @@ password_holder = list(password) #Converts password to a list for randomizing th
 random.shuffle(password_holder)
 
 password = ''.join(password_holder)
-print(password)
+print(f"Your new password is: {password}")
