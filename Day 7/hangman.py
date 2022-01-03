@@ -8,6 +8,8 @@ word_list = hangman_words.word_list
 chosen_word = random.choice(word_list) # choose random word out of list
 print(f"HINT: {chosen_word}")
 
+print(hangman_art.logo)
+
 # Create blank display
 display = []
 for x in chosen_word:
