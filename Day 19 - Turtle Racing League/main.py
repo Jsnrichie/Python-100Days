@@ -5,7 +5,6 @@ t_colors = ["red", "orange", "yellow", "green", "blue", "indigo", "violet"]
 turtles = []
 screen = Screen()
 screen.setup(width=500, height=400)
-print(screen.screensize())
 screen.title("Rainbow Turtle Invitational")
 
 user_turt = screen.textinput("Choose the Winner",
@@ -28,7 +27,7 @@ def race(turtles):
     for i in range(100):
         for turtle in turtles:
             turtle.fd(randint(0, 20))
-            if turtle.xcor() > 230:
+            if turtle.xcor() > 225:
                 # print(turtle.fillcolor())
                 return turtle.fillcolor()
 
@@ -36,9 +35,8 @@ def race(turtles):
 setup(t_colors)
 winner = race(turtles)
 if user_turt == winner:
-    print("You won!")
+    print(f"You won! The {winner} turtle crossed the line first.")
 else:
     print(f"You lost. The {winner} turtle crossed the line first.")
-print(turtles)
 
 screen.exitonclick()
