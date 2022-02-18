@@ -42,8 +42,8 @@ if will_rain:
     message = client.messages \
         .create(
         body="Bring an umbrella bozo",
-        from_='+17755357190',
-        to='+17542619322'
+        from_='UR TWILIO',
+        to='UR ACTUAL NUM'
     )
 
     print(message.status)
